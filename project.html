@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="google-site-verification" content="_W0Rai31aI_uMI_upD56v1hpMU-QeS2_eoLf0ddnNLc" />
+        <title>WCW</title>
+        <style>
+
+            .header {
+                opacity:0.2;
+                background: linear-gradient(to bottom, #a7a7a7 0%, #080808 90%);
+                transition:all 0.4s;
+                position: fixed;
+                width: 100%;
+            }
+
+            .header:hover {
+                background: linear-gradient(to right, #4f6454 0%, #a7a7a7 90%);
+                box-shadow: 0 3px 8px black;
+                opacity: 1;
+            }
+
+            .Button_A {
+                color: white;
+                font-weight: 600;
+                background-color: rgba(0,0,0,0);
+                border: none;
+                font-size: large;
+            }
+
+
+            .Button_A:hover,
+            .Button_B:hover,
+            .popup:hover {
+                text-underline-offset: 19px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .Button_B,
+            .popup {
+                color: rgb(255, 255, 255);
+                background-color:rgba(0,0,0,0);
+                border: none;
+                font-size: large;
+            }
+
+            .popup {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                -webkit-user-select:none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .popup .popuptext {
+                visibility: hidden;
+                width: 150px;
+                background-color: #a7a7a7;
+                color: #fff;
+                text-align: center;
+                position: absolute;
+                z-index: 1;
+                padding-top: 8px;
+                top: 140%;
+                left: 50%;
+                margin-left: -80px;
+                border-radius: 2px;
+                box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.5);
+                line-height: 1.5;
+            }
+
+            .popup .popuptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 100%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+
+            /* Toggle this class - hide and show the popup */ 
+
+            .popup .show {
+                visibility: visible;
+                -webkit-animation: fadeIn 0.7s;
+                animation: fadeIn 0.7s;
+            }
+
+
+             @-webkit-keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+                }
+
+                @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            .popup #b1:hover + .popuptext {
+                visibility: visible;
+                opacity: 1;
+            } 
+
+            body {
+                margin: 0;
+                padding-bottom: 1000px;
+            }
+
+            .quote_div {
+                padding-top: 90px; 
+                padding-bottom: 90px;
+                margin-bottom: 0px;
+                height: 100px;
+                margin: auto;
+                width: 70%;
+            }
+
+            .quote {
+                color: black;
+                font-size: 30px;
+                font-weight: bolder;
+                text-align: center;
+            }
+
+            .author {
+                text-align: center;
+                margin-top:0px; 
+            }
+
+            .Sign_in:hover,
+            .Log_in:hover {
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <form id="timer" action="#"></form>
+
+        <div class= "header" style="
+        display: grid;
+        grid-template-columns: 0.5fr 100px 7fr 1fr 150px 100px 150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        ">
+            <div></div>
+            <div>
+                <button class="Button_A">WCW</button>
+            </div>
+            <div></div>
+            <div>
+                <button class="Button_B"></button>
+            </div>
+            <div>
+                <button class="Button_B">How to Help</button>
+            </div>
+            <div>
+                <button class="Button_B">About us</button>
+            </div>
+            <div>
+                <button class="Button_B">Our Project</button>
+            </div>
+        </div>
+
+        <script src="script_file.js"></script>
+
+        <div style="display: grid;
+        background: linear-gradient(to bottom, #2b4130 20%, #fdfcfc 90%);
+        grid-template-columns: 1fr 7fr 1fr;
+        justify-content: center;
+        padding-bottom: 50px">
+            <div></div>
+            <div class="quote_div">
+                <p id="changing_quote" class="quote">“Quando a caridade é muito discutida, o socorro chega tarde”</p>
+                <!-- <p id="changing_author" class="author">-Arthur C. Clarke-</p> -->
+            </div>
+            <div></div>
+        </div>
+        <img src="fundo.jpg" alt="Paris" width="100%" height="300">
+
+<!-- <div class="popup" >
+                <button class="Button_B" onmouseover="myFunction()">Registration</button>
+                <span class="popuptext" id="myPopup" onmouse="myFunction()" > <span class="Sign_in">Sign up</span> <br> <span class="Log_in">Log in</span> </span>
+            </div> -->
+
+    </body>
+</html> 
