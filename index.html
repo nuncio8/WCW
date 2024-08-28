@@ -6,14 +6,15 @@
         <style>
 
             .header {
-                opacity:0.8;
-                background: linear-gradient(to right, #4f6454 0%, #a7a7a7 90%);
+                opacity:0.2;
+                background: linear-gradient(to bottom, #a7a7a7 0%, #080808 90%);
                 transition:all 0.4s;
                 position: fixed;
                 width: 100%;
             }
 
             .header:hover {
+                background: linear-gradient(to right, #4f6454 0%, #a7a7a7 90%);
                 box-shadow: 0 3px 8px black;
                 opacity: 1;
             }
@@ -23,14 +24,14 @@
                 font-weight: 600;
                 background-color: rgba(0,0,0,0);
                 border: none;
-                font-size: 18x;
+                font-size: large;
             }
 
 
             .Button_A:hover,
             .Button_B:hover,
             .popup:hover {
-                text-underline-offset: 17px;
+                text-underline-offset: 19px;
                 text-decoration: underline;
                 cursor: pointer;
             }
@@ -40,6 +41,7 @@
                 color: rgb(255, 255, 255);
                 background-color:rgba(0,0,0,0);
                 border: none;
+                font-size: large;
             }
 
             .popup {
@@ -152,36 +154,36 @@
 
         <div class= "header" style="
         display: grid;
-        grid-template-columns: 0.5fr 100px 7fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 0.5fr 100px 7fr 1fr 150px 100px 150px;
         padding-top: 15px;
         padding-bottom: 15px;
         ">
             <div></div>
             <div>
-                <button class="Button_A">WCW home</button>
+                <button class="Button_A">WCW</button>
             </div>
             <div></div>
             <div>
                 <button class="Button_B"></button>
             </div>
             <div>
-                <button class="Button_B"></button>
+                <button class="Button_B">How to Help</button>
             </div>
             <div>
-                <button class="Button_B">About</button>
+                <button class="Button_B">About us</button>
             </div>
-            <!-- <div class="popup" >
-                <button class="Button_B" onmouseover="myFunction()">Registration</button>
-                <span class="popuptext" id="myPopup" onmouse="myFunction()" > <span class="Sign_in">Sign up</span> <br> <span class="Log_in">Log in</span> </span>
-            </div> -->
+            <div>
+                <button class="Button_B">Our Project</button>
+            </div>
         </div>
 
         <script src="script_file.js"></script>
 
         <div style="display: grid;
+        background: linear-gradient(to bottom, #2b4130 20%, #fdfcfc 90%);
         grid-template-columns: 1fr 7fr 1fr;
         justify-content: center;
-        width:100%">
+        padding-bottom: 50px">
             <div></div>
             <div class="quote_div">
                 <p id="changing_quote" class="quote">“Quando a caridade é muito discutida, o socorro chega tarde”</p>
@@ -190,5 +192,11 @@
             <div></div>
         </div>
         <img src="fundo.jpg" alt="Paris" width="100%" height="300">
+
+<!-- <div class="popup" >
+                <button class="Button_B" onmouseover="myFunction()">Registration</button>
+                <span class="popuptext" id="myPopup" onmouse="myFunction()" > <span class="Sign_in">Sign up</span> <br> <span class="Log_in">Log in</span> </span>
+            </div> -->
+
     </body>
 </html> 
