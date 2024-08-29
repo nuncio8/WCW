@@ -21,6 +21,7 @@
     opacity: 1;
 }
 
+.Button_clicked:link,
 .Button_A_footer:link,
 .Button_B_footer:link,
 .Button_B:link,
@@ -34,9 +35,14 @@
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: larger;
 }
 
+.Button_clicked{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: large;
+}
 
 .Button_A:hover,
 .Button_B:hover,
